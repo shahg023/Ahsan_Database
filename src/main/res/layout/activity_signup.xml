@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".signup">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:text="User Sign Up"
+        android:textColor="@color/white"
+        android:textSize="45dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText,MissingConstraints,SpUsage" />
+
+    <EditText
+        android:id="@+id/usernamesign"
+        android:layout_width="231dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="72dp"
+        android:text="User Name"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/textView3"
+        app:layout_constraintStart_toStartOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        tools:ignore="Autofill,HardcodedText,LabelFor,MissingConstraints,SpUsage,TextFields,TextSizeCheck" />
+
+    <EditText
+        android:id="@+id/passwordsign"
+        android:layout_width="231dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="24dp"
+        android:text="Enter Password"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/usernamesign"
+        app:layout_constraintStart_toStartOf="@+id/usernamesign"
+        app:layout_constraintTop_toBottomOf="@+id/usernamesign"
+        tools:ignore="Autofill,HardcodedText,LabelFor,MissingConstraints,SpUsage,TextFields,TextSizeCheck" />
+
+    <EditText
+        android:id="@+id/cpasswordsign"
+        android:layout_width="231dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="20dp"
+        android:text="Confirm Password"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/passwordsign"
+        app:layout_constraintStart_toStartOf="@+id/passwordsign"
+        app:layout_constraintTop_toBottomOf="@+id/passwordsign"
+        tools:ignore="Autofill,HardcodedText,LabelFor,MissingConstraints,SpUsage,TextFields,TextSizeCheck" />
+
+    <Button
+        android:id="@+id/signbtnuser"
+        android:layout_width="163dp"
+        android:layout_height="69dp"
+        android:layout_marginTop="88dp"
+        android:backgroundTint="#E73A04"
+        android:text="Sign Up"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/cpasswordsign"
+        app:layout_constraintStart_toStartOf="@+id/cpasswordsign"
+        app:layout_constraintTop_toBottomOf="@+id/cpasswordsign"
+        app:layout_constraintVertical_bias="0.011"
+        tools:ignore="HardcodedText,MissingConstraints,SpUsage" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
